@@ -1,5 +1,22 @@
 # SQL Mastery
 
+- [SQL Mastery](#sql-mastery)
+  - [Introduction](#introduction)
+  - [History And Story Of Data](#history-and-story-of-data)
+  - [Databases + SQL Fundamentals](#databases--sql-fundamentals)
+  - [Environment Setup](#environment-setup)
+  - [SQL Deep Dive](#sql-deep-dive)
+  - [Advanced SQL](#advanced-sql)
+  - [Database Management](#database-management)
+  - [Solving The Mystery](#solving-the-mystery)
+  - [Database Design](#database-design)
+  - [Database Landscape, Performance and Security](#database-landscape-performance-and-security)
+  - [Where To Go From Here](#where-to-go-from-here)
+  - [Bonus Data Engineering (And the role of Machine Learning)/readme.md)](#bonus-data-engineering-and-the-role-of-machine-learning)
+  - [Bonus Redis](#bonus-redis)
+  - [Extra Bits Databases In A Web App (with Node.js)/readme.md)](#extra-bits-databases-in-a-web-app-with-nodejs)
+  - [Extras](#extras)
+
 ## [Introduction](Docs/1.%20Introduction/readme.md)
 
 ## [History And Story Of Data](Docs/2.%20History%20And%20Story%20Of%20Data/readme.md)
