@@ -15,6 +15,15 @@
 
 ## 1. What Is a Database 🐸
 
+![img](../img/3.png)
+![img](../img/4.png)
+![img](../img/5.png)
+![img](../img/6.png)
+![img](../img/7.png)
+![img](../img/8.png)
+![img](../img/9.png)
+![img](../img/10.png)
+
 ## 2. I Didn't Learn Anything, Try Again 🐹
 
 ### 2.1 Drum Memory 🦊
