@@ -60,7 +60,18 @@ all those people use the database differently.
 
 ### 2.1 Drum Memory 🦊
 
+[Drum Memory stackoverflow link](https://stackoverflow.com/questions/2822650/why-is-a-database-always-represented-with-a-cylinder)
+
 ## 3. Database Management System (DBMS) 🦝
+
+![img](../img/12.png)
+
+![img](../img/11.png)
+![img](../img/13.png)
+![img](../img/14.png)
+
+we use sql to communicate with the database management systems.
+![img](../img/15.png)
 
 ## 4. Exercise Building Amazon 🐮
 
@@ -76,11 +87,6 @@ all those people use the database differently.
 
 ## 8. Section Review 🐱
 
-![img](../img/11.png)
-![img](../img/12.png)
-![img](../img/13.png)
-![img](../img/14.png)
-![img](../img/15.png)
 ![img](../img/16.png)
 ![img](../img/17.png)
 ![img](../img/18.png)
