@@ -339,10 +339,10 @@ many -> many
 ## 18. Tables 🐼
 
 ![img](../img/57.png)
+![img](../img/58.png)
 
 ## 19. Columns 🐼
 
-![img](../img/58.png)
 ![img](../img/59.png)
 
 ## 20. Rows 🐼
