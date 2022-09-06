@@ -99,7 +99,23 @@ database example.
 
 so the excel is not working for him. so he is using a database like postgres.
 
+first we have the customers table.
+
 ![img](../img/20.png)
+
+then we will create a products table.
+
+![img](../img/21.png)
+
+then we will create a orders table.
+
+![img](../img/22.png)
+
+let's build the relations in those tables.
+
+![img](../img/23.png)
+
+we cannot do this in excel.
 
 ## 6. 5 Types Of Databases 🦁
 
@@ -109,9 +125,6 @@ so the excel is not working for him. so he is using a database like postgres.
 
 ## 8. Section Review 🐱
 
-![img](../img/21.png)
-![img](../img/22.png)
-![img](../img/23.png)
 ![img](../img/24.png)
 ![img](../img/25.png)
 ![img](../img/26.png)
