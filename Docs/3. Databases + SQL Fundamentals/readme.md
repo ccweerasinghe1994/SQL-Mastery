@@ -32,6 +32,94 @@
 
 ## 1. SQL Playground 🐼
 
+Alright!!! It's time to do your setup your first database, if you go to the following link you'll be able to see a simple DBFiddle!
+
+We've already setup some test tables and and put in some test data for you so there's no need to focus on that part!
+
+We've also added some simple queries that will have a comment right next to the SELECT keyword, feel free to remove this comment (the part between the /\* \*/).
+
+[db fiddle link](https://www.db-fiddle.com/f/7fnLq7sZNknYPfm6U2xEAH/0)
+
+**Schema (PostgreSQL v12)**
+
+```sql
+
+    CREATE TABLE Class (
+      id character(255),
+      year integer NOT NULL,
+      PRIMARY KEY(id)
+    );
+
+    CREATE TABLE Student (
+      id varchar(255) NOT NULL,
+      class varchar(255) NOT NULL,
+      firstName varchar(255) NOT NULL,
+      lastName varchar(255) NOT NULL,
+      dob date NOT NULL,
+      sex varchar(1) NOT NULL,
+      FOREIGN KEY (class) REFERENCES Class(id),
+      PRIMARY KEY (id)
+    );
+
+    INSERT INTO Class(id, year) VALUES('c1', 1);
+    INSERT INTO Class(id, year) VALUES('c2', 2);
+    INSERT INTO Class(id, year) VALUES('c2a', 2);
+
+    INSERT INTO Student
+    VALUES ('s1', 'c1', 'George', 'Jacobson', '1992-01-01', 'm');
+
+    INSERT INTO Student
+    VALUES ('s2', 'c2', 'Macy', 'Waterson', '1992-01-01', 'f');
+
+    INSERT INTO Student
+    VALUES ('s3', 'c1', 'Bill', 'Peters', '1992-01-01', 'm');
+
+
+    INSERT INTO Student
+    VALUES ('s4', 'c1', 'Janine', 'Wilson', '1992-01-01', 'f');
+
+
+    INSERT INTO Student
+    VALUES ('s5', 'c2', 'Jason', 'Lipton', '1992-01-01', 'm');
+
+```
+
+**Query #1**
+
+```sql
+SELECT id,firstName
+FROM Student;
+```
+
+| id  | firstname |
+| --- | --------- |
+| s1  | George    |
+| s2  | Macy      |
+| s3  | Bill      |
+| s4  | Janine    |
+| s5  | Jason     |
+
+---
+
+**Query #2**
+
+```sql
+SELECT *
+FROM Student;
+```
+
+| id  | class | firstname | lastname | dob                      | sex |
+| --- | ----- | --------- | -------- | ------------------------ | --- |
+| s1  | c1    | George    | Jacobson | 1992-01-01T00:00:00.000Z | m   |
+| s2  | c2    | Macy      | Waterson | 1992-01-01T00:00:00.000Z | f   |
+| s3  | c1    | Bill      | Peters   | 1992-01-01T00:00:00.000Z | m   |
+| s4  | c1    | Janine    | Wilson   | 1992-01-01T00:00:00.000Z | f   |
+| s5  | c2    | Jason     | Lipton   | 1992-01-01T00:00:00.000Z | m   |
+
+---
+
+[View on DB Fiddle](https://www.db-fiddle.com/f/7fnLq7sZNknYPfm6U2xEAH/0)
+
 ## 2. SQL Playground 🐷
 
 ## 3. Exercise Setting Up Your First Database 🦝
@@ -85,3 +173,68 @@
 ## 24. Exercise Relational Model Quiz 🐼
 
 ## 25. Endorsements On LinkedIN 🐼
+
+![img](../img/26.png)
+![img](../img/27.png)
+![img](../img/28.png)
+![img](../img/29.png)
+![img](../img/30.png)
+![img](../img/31.png)
+![img](../img/32.png)
+![img](../img/33.png)
+![img](../img/34.png)
+![img](../img/35.png)
+![img](../img/36.png)
+![img](../img/37.png)
+![img](../img/38.png)
+![img](../img/39.png)
+![img](../img/40.png)
+![img](../img/41.png)
+![img](../img/42.png)
+![img](../img/43.png)
+![img](../img/44.png)
+![img](../img/45.png)
+![img](../img/46.png)
+![img](../img/47.png)
+![img](../img/48.png)
+![img](../img/49.png)
+![img](../img/50.png)
+![img](../img/51.png)
+![img](../img/52.png)
+![img](../img/53.png)
+![img](../img/54.png)
+![img](../img/55.png)
+![img](../img/56.png)
+![img](../img/57.png)
+![img](../img/58.png)
+![img](../img/59.png)
+![img](../img/60.png)
+![img](../img/61.png)
+![img](../img/62.png)
+![img](../img/63.png)
+![img](../img/64.png)
+![img](../img/65.png)
+![img](../img/66.png)
+![img](../img/67.png)
+![img](../img/68.png)
+![img](../img/69.png)
+![img](../img/70.png)
+![img](../img/71.png)
+![img](../img/72.png)
+![img](../img/73.png)
+![img](../img/74.png)
+![img](../img/75.png)
+![img](../img/76.png)
+![img](../img/77.png)
+![img](../img/78.png)
+![img](../img/79.png)
+![img](../img/80.png)
+![img](../img/81.png)
+![img](../img/82.png)
+![img](../img/83.png)
+![img](../img/84.png)
+![img](../img/85.png)
+![img](../img/86.png)
+![img](../img/87.png)
+![img](../img/88.png)
+![img](../img/89.png)
