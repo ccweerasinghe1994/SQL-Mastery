@@ -27,6 +27,29 @@
 
 ## 1. Why PostgreSQL 🦊
 
+![img](../img/68.png)
+![img](../img/69.png)
+![img](../img/70.png)
+![img](../img/71.png)
+![img](../img/72.png)
+![img](../img/73.png)
+![img](../img/74.png)
+![img](../img/75.png)
+![img](../img/76.png)
+![img](../img/77.png)
+![img](../img/78.png)
+![img](../img/79.png)
+![img](../img/80.png)
+![img](../img/81.png)
+![img](../img/82.png)
+![img](../img/83.png)
+![img](../img/84.png)
+![img](../img/85.png)
+![img](../img/86.png)
+![img](../img/87.png)
+![img](../img/88.png)
+![img](../img/89.png)
+
 ### 1.1 Why Postgres is the worlds best database🦊
 
 ## 2. Environment Tooling 🦊
