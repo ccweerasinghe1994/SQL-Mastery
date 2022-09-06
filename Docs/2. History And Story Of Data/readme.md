@@ -11,7 +11,6 @@
   - [6. 5 Types Of Databases 🦁](#6-5-types-of-databases-)
     - [6.1 Database Types Deep Dive 🐯](#61-database-types-deep-dive-)
   - [7. Exercise What Is A Database 🤖](#7-exercise-what-is-a-database-)
-  - [8. Section Review 🐱](#8-section-review-)
 
 ## 1. What Is a Database 🐸
 
@@ -75,89 +74,62 @@ we use sql to communicate with the database management systems.
 
 ## 4. Exercise Building Amazon 🐮
 
+let's first use excel
+
+![img](../img/16.png)
+
+now data is getting complecated.
+
+![img](../img/17.png)
+
+now the data is getting bigger and bigger.
+
+![img](../img/18.png)
+
+database example.
+
+![img](../img/19.png)
+
 ### 4.1 SQL Playground 🐷
+
+[w3schools sql playground](https://www.w3schools.com/sql/trysql.asp?filename=trysql_op_in)
 
 ## 5. Exercise Building Amazon 2 🦤
 
+so the excel is not working for him. so he is using a database like postgres.
+
+first we have the customers table.
+
+![img](../img/20.png)
+
+then we will create a products table.
+
+![img](../img/21.png)
+
+then we will create a orders table.
+
+![img](../img/22.png)
+
+let's build the relations in those tables.
+
+![img](../img/23.png)
+
+we cannot do this in excel.
+
 ## 6. 5 Types Of Databases 🦁
+
+examples.
+
+![img](../img/24.png)
+
+types of databases.
+
+![img](../img/25.png)
 
 ### 6.1 Database Types Deep Dive 🐯
 
+[A Brief Overview of the Database Landscape](https://www.ibm.com/cloud/blog/brief-overview-database-landscape)
+
 ## 7. Exercise What Is A Database 🤖
 
-## 8. Section Review 🐱
-
-![img](../img/16.png)
-![img](../img/17.png)
-![img](../img/18.png)
-![img](../img/19.png)
-![img](../img/20.png)
-![img](../img/21.png)
-![img](../img/22.png)
-![img](../img/23.png)
-![img](../img/24.png)
-![img](../img/25.png)
-![img](../img/26.png)
-![img](../img/27.png)
-![img](../img/28.png)
-![img](../img/29.png)
-![img](../img/30.png)
-![img](../img/31.png)
-![img](../img/32.png)
-![img](../img/33.png)
-![img](../img/34.png)
-![img](../img/35.png)
-![img](../img/36.png)
-![img](../img/37.png)
-![img](../img/38.png)
-![img](../img/39.png)
-![img](../img/40.png)
-![img](../img/41.png)
-![img](../img/42.png)
-![img](../img/43.png)
-![img](../img/44.png)
-![img](../img/45.png)
-![img](../img/46.png)
-![img](../img/47.png)
-![img](../img/48.png)
-![img](../img/49.png)
-![img](../img/50.png)
-![img](../img/51.png)
-![img](../img/52.png)
-![img](../img/53.png)
-![img](../img/54.png)
-![img](../img/55.png)
-![img](../img/56.png)
-![img](../img/57.png)
-![img](../img/58.png)
-![img](../img/59.png)
-![img](../img/60.png)
-![img](../img/61.png)
-![img](../img/62.png)
-![img](../img/63.png)
-![img](../img/64.png)
-![img](../img/65.png)
-![img](../img/66.png)
-![img](../img/67.png)
-![img](../img/68.png)
-![img](../img/69.png)
-![img](../img/70.png)
-![img](../img/71.png)
-![img](../img/72.png)
-![img](../img/73.png)
-![img](../img/74.png)
-![img](../img/75.png)
-![img](../img/76.png)
-![img](../img/77.png)
-![img](../img/78.png)
-![img](../img/79.png)
-![img](../img/80.png)
-![img](../img/81.png)
-![img](../img/82.png)
-![img](../img/83.png)
-![img](../img/84.png)
-![img](../img/85.png)
-![img](../img/86.png)
-![img](../img/87.png)
-![img](../img/88.png)
-![img](../img/89.png)
+database is a system software and hardware. which allow the user to store organize and retrieve data.
