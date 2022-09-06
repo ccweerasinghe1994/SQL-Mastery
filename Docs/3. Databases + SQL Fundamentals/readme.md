@@ -283,15 +283,27 @@ before databases we had
 
 ![img](../img/37.png)
 ![img](../img/38.png)
-![img](../img/39.png)
 
 ## 11. Database Oriented Approach 🐼
 
+![img](../img/39.png)
+
+![img](../img/40.png)
+
 ## 12. Exercise SQL Starter Quiz 🐼
+
+[quiz](https://www.jetpunk.com/user-quizzes/1336712/sql-starter-quiz)
 
 ## 13. Database Models 🐼
 
+![img](../img/41.png)
+
 ## 14. Hierarchical And Networking Model 🐼
+
+![img](../img/42.png)
+![img](../img/43.png)
+![img](../img/44.png)
+![img](../img/45.png)
 
 ## 15. Relational Model 🐼
 
@@ -317,12 +329,6 @@ before databases we had
 
 ## 25. Endorsements On LinkedIN 🐼
 
-![img](../img/40.png)
-![img](../img/41.png)
-![img](../img/42.png)
-![img](../img/43.png)
-![img](../img/44.png)
-![img](../img/45.png)
 ![img](../img/46.png)
 ![img](../img/47.png)
 ![img](../img/48.png)
