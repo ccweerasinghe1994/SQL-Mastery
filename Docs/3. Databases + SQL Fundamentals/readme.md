@@ -3,10 +3,13 @@
 - [SQL MASTERY HOME PAGE 🏠](#sql-mastery-home-page-)
   - [1. SQL Playground 🐼](#1-sql-playground-)
   - [2. SQL Playground 🐷](#2-sql-playground-)
-    - [what is sql](#what-is-sql)
   - [3. Exercise Setting Up Your First Database 🦝](#3-exercise-setting-up-your-first-database-)
+    - [Query](#query)
   - [4. What Is SQL 🐸](#4-what-is-sql-)
+    - [what is sql](#what-is-sql)
   - [5. What Is A Query](#5-what-is-a-query)
+    - [Query #1](#query-1)
+    - [Query #1](#query-1-1)
     - [4.1 DBFiddle 🐼](#41-dbfiddle-)
   - [5. Imperative vs Declarative 🐼](#5-imperative-vs-declarative-)
   - [6. History of SQL 🐼](#6-history-of-sql-)
@@ -123,26 +126,128 @@ FROM Student;
 
 ## 2. SQL Playground 🐷
 
+## 3. Exercise Setting Up Your First Database 🦝
+
+[View on DB Fiddle](https://www.db-fiddle.com/f/cvzVxMkHQ5ZgpoXVe7pyQk/0)
+
+### Query
+
+![img](../img/27.png)
+
+`*` is called a wildcard. which means select everything.
+
+so the above query is telling select us everything from users.
+
+## 4. What Is SQL 🐸
+
 ### what is sql
 
 sql is a programming language we use to talk to databases.
 
 ![img](../img/26.png)
 
+## 5. What Is A Query
+
+```sql
+
+    CREATE TABLE User (
+      id varchar(255) NOT NULL,
+      name varchar(255) NOT NULL,
+      lastName varchar(255) NOT NULL,
+      dob date NOT NULL,
+      sex varchar(1) NOT NULL,
+      role varchar(255) NOT NULL,
+      PRIMARY KEY (id)
+    );
+
+    INSERT INTO User
+    VALUES ('u1', 'George', 'Jacobson', '1992-01-01', 'm', 'manager');
+
+    INSERT INTO User
+    VALUES ('u2', 'Macy', 'Waterson', '1992-01-01', 'f', 'employee');
+
+    INSERT INTO User
+    VALUES ('u3', 'Bill', 'Peters', '1992-01-01', 'm', 'employee');
 
 
-![img](../img/27.png)
+    INSERT INTO User
+    VALUES ('u4','Janine', 'Wilson', '1992-01-01', 'f', 'manager');
+
+
+    INSERT INTO User
+    VALUES ('u5', 'Jason', 'Lipton', '1992-01-01', 'm', 'manager');
+```
+
+### Query #1
+
+```sql
+select * from User;
+```
+
+| id  | name   | lastName | dob        | sex | role     |
+| --- | ------ | -------- | ---------- | --- | -------- |
+| u1  | George | Jacobson | 1992-01-01 | m   | manager  |
+| u2  | Macy   | Waterson | 1992-01-01 | f   | employee |
+| u3  | Bill   | Peters   | 1992-01-01 | m   | employee |
+| u4  | Janine | Wilson   | 1992-01-01 | f   | manager  |
+| u5  | Jason  | Lipton   | 1992-01-01 | m   | manager  |
+
+---
+
 ![img](../img/28.png)
+
 ![img](../img/29.png)
 ![img](../img/30.png)
 
-## 3. Exercise Setting Up Your First Database 🦝
+```sql
+    CREATE TABLE User (
+      id varchar(255) NOT NULL,
+      name varchar(255) NOT NULL,
+      lastName varchar(255) NOT NULL,
+      dob date NOT NULL,
+      sex varchar(1) NOT NULL,
+      role varchar(255) NOT NULL,
+      PRIMARY KEY (id)
+    );
 
-## 4. What Is SQL 🐸
+    INSERT INTO User
+    VALUES ('u1', 'George', 'Jacobson', '1992-01-01', 'm', 'manager');
 
-## 5. What Is A Query
+    INSERT INTO User
+    VALUES ('u2', 'Macy', 'Waterson', '1992-01-01', 'f', 'employee');
+
+    INSERT INTO User
+    VALUES ('u3', 'Bill', 'Peters', '1992-01-01', 'm', 'employee');
+
+
+    INSERT INTO User
+    VALUES ('u4','Janine', 'Wilson', '1992-01-01', 'f', 'manager');
+
+
+    INSERT INTO User
+    VALUES ('u5', 'Jason', 'Lipton', '1992-01-01', 'm', 'manager');
+
+```
+
+### Query #1
+
+```sql
+    select * from User where role = "manager";
+```
+
+| id  | name   | lastName | dob        | sex | role    |
+| --- | ------ | -------- | ---------- | --- | ------- |
+| u1  | George | Jacobson | 1992-01-01 | m   | manager |
+| u4  | Janine | Wilson   | 1992-01-01 | f   | manager |
+| u5  | Jason  | Lipton   | 1992-01-01 | m   | manager |
+
+---
+
+[View on DB Fiddle](https://www.db-fiddle.com/f/cvzVxMkHQ5ZgpoXVe7pyQk/0)
 
 ### 4.1 DBFiddle 🐼
+
+[dbfiddle ](https://www.db-fiddle.com/f/cvzVxMkHQ5ZgpoXVe7pyQk/0)
 
 ## 5. Imperative vs Declarative 🐼
 
@@ -247,3 +352,7 @@ sql is a programming language we use to talk to databases.
 ![img](../img/87.png)
 ![img](../img/88.png)
 ![img](../img/89.png)
+
+```
+
+```
