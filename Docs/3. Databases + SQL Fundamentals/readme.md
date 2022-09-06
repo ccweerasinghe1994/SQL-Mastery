@@ -3,6 +3,7 @@
 - [SQL MASTERY HOME PAGE 🏠](#sql-mastery-home-page-)
   - [1. SQL Playground 🐼](#1-sql-playground-)
   - [2. SQL Playground 🐷](#2-sql-playground-)
+    - [what is sql](#what-is-sql)
   - [3. Exercise Setting Up Your First Database 🦝](#3-exercise-setting-up-your-first-database-)
   - [4. What Is SQL 🐸](#4-what-is-sql-)
   - [5. What Is A Query](#5-what-is-a-query)
@@ -122,6 +123,19 @@ FROM Student;
 
 ## 2. SQL Playground 🐷
 
+### what is sql
+
+sql is a programming language we use to talk to databases.
+
+![img](../img/26.png)
+
+
+
+![img](../img/27.png)
+![img](../img/28.png)
+![img](../img/29.png)
+![img](../img/30.png)
+
 ## 3. Exercise Setting Up Your First Database 🦝
 
 ## 4. What Is SQL 🐸
@@ -174,11 +188,6 @@ FROM Student;
 
 ## 25. Endorsements On LinkedIN 🐼
 
-![img](../img/26.png)
-![img](../img/27.png)
-![img](../img/28.png)
-![img](../img/29.png)
-![img](../img/30.png)
 ![img](../img/31.png)
 ![img](../img/32.png)
 ![img](../img/33.png)
