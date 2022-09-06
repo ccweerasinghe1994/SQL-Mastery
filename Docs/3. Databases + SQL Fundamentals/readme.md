@@ -21,6 +21,7 @@
   - [12. Exercise SQL Starter Quiz 🐼](#12-exercise-sql-starter-quiz-)
   - [13. Database Models 🐼](#13-database-models-)
   - [14. Hierarchical And Networking Model 🐼](#14-hierarchical-and-networking-model-)
+    - [Network model](#network-model)
   - [15. Relational Model 🐼](#15-relational-model-)
   - [16. DBMS Revisited 🐼](#16-dbms-revisited-)
     - [16.1 12 Rules of Codd 🐼](#161-12-rules-of-codd-)
@@ -302,6 +303,9 @@ before databases we had
 
 ![img](../img/42.png)
 ![img](../img/43.png)
+
+### Network model
+
 ![img](../img/44.png)
 ![img](../img/45.png)
 
