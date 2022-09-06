@@ -33,7 +33,6 @@
   - [22. OLTP vs OLAP 🐼](#22-oltp-vs-olap-)
   - [23. Exercise OLTP vs OLAP 🐼](#23-exercise-oltp-vs-olap-)
   - [24. Exercise Relational Model Quiz 🐼](#24-exercise-relational-model-quiz-)
-  - [25. Endorsements On LinkedIN 🐼](#25-endorsements-on-linkedin-)
 
 ## 1. SQL Playground 🐼
 
@@ -304,20 +303,44 @@ before databases we had
 ![img](../img/42.png)
 ![img](../img/43.png)
 
+one -> many
+
 ### Network model
 
 ![img](../img/44.png)
 ![img](../img/45.png)
 
+many -> many
+
 ## 15. Relational Model 🐼
+
+![img](../img/46.png)
+![img](../img/47.png)
 
 ## 16. DBMS Revisited 🐼
 
+![img](../img/48.png)
+![img](../img/49.png)
+![img](../img/50.png)
+![img](../img/51.png)
+![img](../img/52.png)
+![img](../img/53.png)
+![img](../img/54.png)
+![img](../img/55.png)
+
 ### 16.1 12 Rules of Codd 🐼
+
+[Codd's 12 rules](https://www.w3resource.com/sql/sql-basic/codd-12-rule-relation.php)
 
 ## 17. Relational Model Revisited 🐼
 
+![img](../img/56.png)
+
 ## 18. Tables 🐼
+
+![img](../img/57.png)
+![img](../img/58.png)
+![img](../img/59.png)
 
 ## 19. Columns 🐼
 
@@ -331,22 +354,6 @@ before databases we had
 
 ## 24. Exercise Relational Model Quiz 🐼
 
-## 25. Endorsements On LinkedIN 🐼
-
-![img](../img/46.png)
-![img](../img/47.png)
-![img](../img/48.png)
-![img](../img/49.png)
-![img](../img/50.png)
-![img](../img/51.png)
-![img](../img/52.png)
-![img](../img/53.png)
-![img](../img/54.png)
-![img](../img/55.png)
-![img](../img/56.png)
-![img](../img/57.png)
-![img](../img/58.png)
-![img](../img/59.png)
 ![img](../img/60.png)
 ![img](../img/61.png)
 ![img](../img/62.png)
