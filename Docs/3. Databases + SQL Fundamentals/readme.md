@@ -196,9 +196,6 @@ select * from User;
 
 ![img](../img/28.png)
 
-![img](../img/29.png)
-![img](../img/30.png)
-
 ```sql
     CREATE TABLE User (
       id varchar(255) NOT NULL,
@@ -251,15 +248,42 @@ select * from User;
 
 ## 5. Imperative vs Declarative 🐼
 
+![img](../img/29.png)
+![img](../img/30.png)
+
+first example we have to tell what we need.
+
+second example we have to tell how we want to it.
+
+![img](../img/31.png)
+
+language example.
+
+![img](../img/32.png)
+
 ## 6. History of SQL 🐼
+
+![img](../img/33.png)
 
 ## 7. Exercises The Select Statement 🐼
 
 ## 8. Optional History of SQL Deep Dive 🐼
 
+[History of Databases](https://www.youtube.com/watch?v=KG-mqHoXOXY)
+
 ## 9. SQL Standards 🐼
 
+![img](../img/34.png)
+![img](../img/35.png)
+
 ## 10. What Is A Database Revisited 🐼
+
+before databases we had
+![img](../img/36.png)
+
+![img](../img/37.png)
+![img](../img/38.png)
+![img](../img/39.png)
 
 ## 11. Database Oriented Approach 🐼
 
@@ -293,15 +317,6 @@ select * from User;
 
 ## 25. Endorsements On LinkedIN 🐼
 
-![img](../img/31.png)
-![img](../img/32.png)
-![img](../img/33.png)
-![img](../img/34.png)
-![img](../img/35.png)
-![img](../img/36.png)
-![img](../img/37.png)
-![img](../img/38.png)
-![img](../img/39.png)
 ![img](../img/40.png)
 ![img](../img/41.png)
 ![img](../img/42.png)
