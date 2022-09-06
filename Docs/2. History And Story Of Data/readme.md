@@ -119,14 +119,24 @@ we cannot do this in excel.
 
 ## 6. 5 Types Of Databases 🦁
 
+examples.
+
+![img](../img/24.png)
+
+types of databases.
+
+![img](../img/25.png)
+
 ### 6.1 Database Types Deep Dive 🐯
+
+[A Brief Overview of the Database Landscape](https://www.ibm.com/cloud/blog/brief-overview-database-landscape)
 
 ## 7. Exercise What Is A Database 🤖
 
+database is a system software and hardware. which allow the user to store organize and retrieve data.
+
 ## 8. Section Review 🐱
 
-![img](../img/24.png)
-![img](../img/25.png)
 ![img](../img/26.png)
 ![img](../img/27.png)
 ![img](../img/28.png)
