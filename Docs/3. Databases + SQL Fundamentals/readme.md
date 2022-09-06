@@ -347,6 +347,8 @@ many -> many
 
 ## 20. Rows 🐼
 
+![img](../img/60.png)
+
 ## 21. Primary And Foreign Keys 🐼
 
 ## 22. OLTP vs OLAP 🐼
@@ -355,7 +357,6 @@ many -> many
 
 ## 24. Exercise Relational Model Quiz 🐼
 
-![img](../img/60.png)
 ![img](../img/61.png)
 ![img](../img/62.png)
 ![img](../img/63.png)
