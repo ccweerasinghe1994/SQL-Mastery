@@ -75,9 +75,31 @@ we use sql to communicate with the database management systems.
 
 ## 4. Exercise Building Amazon 🐮
 
+let's first use excel
+
+![img](../img/16.png)
+
+now data is getting complecated.
+
+![img](../img/17.png)
+
+now the data is getting bigger and bigger.
+
+![img](../img/18.png)
+
+database example.
+
+![img](../img/19.png)
+
 ### 4.1 SQL Playground 🐷
 
+[w3schools sql playground](https://www.w3schools.com/sql/trysql.asp?filename=trysql_op_in)
+
 ## 5. Exercise Building Amazon 2 🦤
+
+so the excel is not working for him. so he is using a database like postgres.
+
+![img](../img/20.png)
 
 ## 6. 5 Types Of Databases 🦁
 
@@ -87,11 +109,6 @@ we use sql to communicate with the database management systems.
 
 ## 8. Section Review 🐱
 
-![img](../img/16.png)
-![img](../img/17.png)
-![img](../img/18.png)
-![img](../img/19.png)
-![img](../img/20.png)
 ![img](../img/21.png)
 ![img](../img/22.png)
 ![img](../img/23.png)
