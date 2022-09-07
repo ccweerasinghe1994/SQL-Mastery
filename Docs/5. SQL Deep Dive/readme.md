@@ -94,6 +94,8 @@ from employees;
 
 ![img](../img/83.png)
 
+![img](../img/84.png)
+
 ```SQL
 SELECT concat(first_name, ' ', last_name) AS "Full Name"
 FROM "Employees".public.employees;
@@ -114,15 +116,15 @@ FROM "Employees".public.employees;
 | Sumant Peac        |
 | Duangkaew Piveteau |
 
+## 6. What Is A Function In SQL 🐰
 
-![img](../img/84.png)
 ![img](../img/85.png)
 ![img](../img/86.png)
 ![img](../img/87.png)
 ![img](../img/88.png)
 ![img](../img/89.png)
-
-## 6. What Is A Function In SQL 🐰
+![img](../img/90.png)
+![img](../img/91.png)
 
 ## 7. Aggregate Functions 🐰
 
