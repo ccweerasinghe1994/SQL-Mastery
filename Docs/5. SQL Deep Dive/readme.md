@@ -13,9 +13,60 @@ Although we provide exercises throughout the sections, we also recommend that yo
 ## 3. Exercise Simple Queries 🐰
 
 ![img](../img/77.png)
+
+```SQL
+select * from employees;
+```
+
+**output**
+
+| emp_no | birth_date | first_name | last_name | gender | hire_date  |
+| :----- | :--------- | :--------- | :-------- | :----- | :--------- |
+| 10001  | 1953-09-02 | Georgi     | Facello   | M      | 1986-06-26 |
+| 10002  | 1964-06-02 | Bezalel    | Simmel    | F      | 1985-11-21 |
+
 ![img](../img/78.png)
+
+```SQL
+select count(*) from departments;
+```
+
+**output**
+
+| count |
+| :---- |
+| 9     |
+
 ![img](../img/79.png)
+
+```SQL
+select count(*) AS "Salaray Incremenets"
+from salaries
+where emp_no = 10001;
+```
+
+**output**
+
+| Salaray Incremenets |
+| :------------------ |
+| 17                  |
+
 ![img](../img/80.png)
+
+```SQL
+SELECT title
+FROM titles
+WHERE emp_no = 10006;
+```
+
+**output**
+
+| title           |
+| :-------------- |
+| Senior Engineer |
+
+## 4. Exercise Renaming Columns 🐰
+
 ![img](../img/81.png)
 ![img](../img/82.png)
 ![img](../img/83.png)
@@ -25,8 +76,6 @@ Although we provide exercises throughout the sections, we also recommend that yo
 ![img](../img/87.png)
 ![img](../img/88.png)
 ![img](../img/89.png)
-
-## 4. Exercise Renaming Columns 🐰
 
 ## 5. Concat Function 🐰
 
