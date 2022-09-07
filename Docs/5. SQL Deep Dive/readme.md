@@ -77,28 +77,50 @@ from employees;
 
 **output**
 
-| Employee # | Birthday | First Name |
-| :--- | :--- | :--- |
-| 10001 | 1953-09-02 | Georgi |
-| 10002 | 1964-06-02 | Bezalel |
-| 10003 | 1959-12-03 | Parto |
-| 10004 | 1954-05-01 | Chirstian |
-| 10005 | 1955-01-21 | Kyoichi |
-| 10006 | 1953-04-20 | Anneke |
-| 10007 | 1957-05-23 | Tzvetan |
-| 10008 | 1958-02-19 | Saniya |
-| 10009 | 1952-04-19 | Sumant |
-| 10010 | 1963-06-01 | Duangkaew |
+| Employee # | Birthday   | First Name |
+| :--------- | :--------- | :--------- |
+| 10001      | 1953-09-02 | Georgi     |
+| 10002      | 1964-06-02 | Bezalel    |
+| 10003      | 1959-12-03 | Parto      |
+| 10004      | 1954-05-01 | Chirstian  |
+| 10005      | 1955-01-21 | Kyoichi    |
+| 10006      | 1953-04-20 | Anneke     |
+| 10007      | 1957-05-23 | Tzvetan    |
+| 10008      | 1958-02-19 | Saniya     |
+| 10009      | 1952-04-19 | Sumant     |
+| 10010      | 1963-06-01 | Duangkaew  |
+
+## 5. Concat Function 🐰
 
 ![img](../img/83.png)
+
+```SQL
+SELECT concat(first_name, ' ', last_name) AS "Full Name"
+FROM "Employees".public.employees;
+```
+
+**output**
+
+| Full Name          |
+| :----------------- |
+| Georgi Facello     |
+| Bezalel Simmel     |
+| Parto Bamford      |
+| Chirstian Koblick  |
+| Kyoichi Maliniak   |
+| Anneke Preusig     |
+| Tzvetan Zielinski  |
+| Saniya Kalloufi    |
+| Sumant Peac        |
+| Duangkaew Piveteau |
+
+
 ![img](../img/84.png)
 ![img](../img/85.png)
 ![img](../img/86.png)
 ![img](../img/87.png)
 ![img](../img/88.png)
 ![img](../img/89.png)
-
-## 5. Concat Function 🐰
 
 ## 6. What Is A Function In SQL 🐰
 
