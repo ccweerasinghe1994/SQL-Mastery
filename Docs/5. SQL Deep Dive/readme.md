@@ -69,6 +69,27 @@ WHERE emp_no = 10006;
 
 ![img](../img/81.png)
 ![img](../img/82.png)
+
+```SQL
+select emp_no AS "Employee #", birth_date AS "Birthday", first_name AS "First Name"
+from employees;
+```
+
+**output**
+
+| Employee # | Birthday | First Name |
+| :--- | :--- | :--- |
+| 10001 | 1953-09-02 | Georgi |
+| 10002 | 1964-06-02 | Bezalel |
+| 10003 | 1959-12-03 | Parto |
+| 10004 | 1954-05-01 | Chirstian |
+| 10005 | 1955-01-21 | Kyoichi |
+| 10006 | 1953-04-20 | Anneke |
+| 10007 | 1957-05-23 | Tzvetan |
+| 10008 | 1958-02-19 | Saniya |
+| 10009 | 1952-04-19 | Sumant |
+| 10010 | 1963-06-01 | Duangkaew |
+
 ![img](../img/83.png)
 ![img](../img/84.png)
 ![img](../img/85.png)
