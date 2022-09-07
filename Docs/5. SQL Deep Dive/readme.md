@@ -2,9 +2,16 @@
 
 ## 1. Query Along 🐰
 
+Although we provide exercises throughout the sections, we also recommend that you follow along by also writing out what you see on the screen and trying the SQL commands yourself that we show you. The best way to learn is not by watching us do it, but by practicing the commands yourself. So Query Along!
+
+## 2. Starting With Query 🐰
+
 ![img](../img/74.png)
 ![img](../img/75.png)
 ![img](../img/76.png)
+
+## 3. Exercise Simple Queries 🐰
+
 ![img](../img/77.png)
 ![img](../img/78.png)
 ![img](../img/79.png)
@@ -18,10 +25,6 @@
 ![img](../img/87.png)
 ![img](../img/88.png)
 ![img](../img/89.png)
-
-## 2. Starting With Query 🐰
-
-## 3. Exercise Simple Queries 🐰
 
 ## 4. Exercise Renaming Columns 🐰
 
