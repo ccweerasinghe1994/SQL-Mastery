@@ -354,11 +354,69 @@ WHERE gender = 'F' LIMIT 10;
 
 ## 12. AND and OR 🐰
 
+![img](../img/114.png)
+![img](../img/115.png)
+![img](../img/116.png)
+![img](../img/117.png)
+**Question**
+
+```SQL
+SELECT first_name, last_name, gender, hire_date
+FROM employees
+WHERE (first_name = 'Georgi'
+    AND last_name = 'Facello' AND gender = 'M' AND hire_date = '1986-06-26')
+   OR (first_name = 'Bezalel' AND
+       last_name = 'Simmel');
+```
+
+## **output**
+
+| first_name | last_name | gender | hire_date  |
+| :--------- | :-------- | :----- | :--------- |
+| Georgi     | Facello   | M      | 1986-06-26 |
+| Bezalel    | Simmel    | F      | 1985-11-21 |
+
 ## 13. Exercise Filtering Data 🐰
+
+**Question**
+
+![img](../img/118.png)
+
+```SQL
+SELECT count(*)
+FROM customers
+WHERE (state = 'OR' OR state = 'NY')
+  AND (gender = 'F');
+```
+
+| count |
+| :---- |
+| 200   |
 
 ## 14. Exercise The Where Clause 🐰
 
+[quiz](https://www.w3schools.com/sql/exercise.asp?filename=exercise_where1)
+
 ## 15. The NOT Keyword 🐰
+
+![img](../img/119.png)
+![img](../img/120.png)
+
+**Question**
+
+![img](../img/121.png)
+
+```SQL
+SELECT count(*)
+FROM customers
+WHERE NOT age = 55;
+```
+
+## **output**
+
+| count |
+| :---- |
+| 19716 |
 
 ## 16. Comparison Operators 🐰
 
@@ -368,14 +426,6 @@ WHERE gender = 'F' LIMIT 10;
 
 ## 18. Logical Operators 🐰
 
-![img](../img/114.png)
-![img](../img/115.png)
-![img](../img/116.png)
-![img](../img/117.png)
-![img](../img/118.png)
-![img](../img/119.png)
-![img](../img/120.png)
-![img](../img/121.png)
 ![img](../img/122.png)
 ![img](../img/123.png)
 ![img](../img/124.png)
