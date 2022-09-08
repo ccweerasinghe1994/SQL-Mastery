@@ -167,9 +167,147 @@ FROM salaries;
 | :----------- |
 | 181480757419 |
 
+### 7.1 Aggregate Functions 🐰
+
+[postgres 14 aggregate function documentation](https://www.postgresql.org/docs/14/functions-aggregate.html)
+
+## 8. Exercise Aggregate Functions 🐰
+
+Time to sharpen those skills, the following exercises are there to help you flex those SQL muscles you've just built!
+
+In the previous videos we learned a lot about aggregate functions, and how they can help us answer complex questions!
+
+Reminder
+
+Exercises are grouped according to the database the should be executed against, as always our format is <DatabaseName>/<Table> which indicates against which database and table you should be working to get accurate results.
+
+**Question**
+What database should I use for these exercises?
+
+```SQL
+SELECT avg(salary)
+FROM salaries;
+```
+
+**output**
+
+| avg                |
+| :----------------- |
+| 63810.744836143706 |
+
+---
+
+**Question**
+What year was the youngest person born in the company?
+
+```SQL
+SELECT max(birth_date)
+FROM employees;
+```
+
+**output**
+
+| max        |
+| :--------- |
+| 1965-02-01 |
+
+---
+
+**Question**
+How many towns are there in france?
+
+```SQL
+SELECT count(*)
+FROM "France".public.towns;
+```
+
+## **output**
+
+| count |
+| :---- |
+| 36684 |
+
+---
+
+**Question**
+How many official languages are there?
+
+```SQL
+SELECT count(*)
+FROM "World".public.countrylanguage
+WHERE isofficial = true;
+```
+
+## **output**
+
+| count |
+| :---- |
+| 238   |
+
+---
+
+**Question**
+What is the average life expectancy in the world?
+
+```SQL
+SELECT avg(lifeexpectancy)
+FROM country;
+```
+
+## **output**
+
+| avg               |
+| :---------------- |
+| 66.48603611164265 |
+
+---
+
+**Question**
+What is the average population for cities in the netherlands?
+
+```SQL
+SELECT avg(population)
+FROM city
+WHERE countrycode = 'NLD';
+```
+
+## **output**
+
+| avg       |
+| :-------- |
+| 185001.75 |
+
+---
+
+## 9. Commenting Your Queries 🐰
+
 ![img](../img/94.png)
 ![img](../img/95.png)
 ![img](../img/96.png)
+
+```SQL
+SELECT first_name, last_name
+FROM "Employees".public.employees
+/*
+FILTER ON FIRST NAME AND LAST NAME TO LIMIT THE AMOUNT OF DATA RETURNED
+AND FOCUS THE FILTERING ON A SINGLE PERSON
+*/
+WHERE first_name = 'Mayumi'
+  AND last_name = 'Schueller';
+```
+
+**output**
+
+| first_name | last_name |
+| :--------- | :-------- |
+| Mayumi     | Schueller |
+
+### 9.1 Make comments the most important code you write! 🐰
+
+[How to make comments the most important ‘code’ you write](https://www.red-gate.com/simple-talk/databases/oracle-databases/how-to-make-comments-the-most-important-code-you-write/)
+
+## 10. Common SELECT Mistakes 🐰
+
 ![img](../img/97.png)
 ![img](../img/98.png)
 ![img](../img/99.png)
@@ -183,6 +321,25 @@ FROM salaries;
 ![img](../img/107.png)
 ![img](../img/108.png)
 ![img](../img/109.png)
+
+## 11. Filtering Data 🐰
+
+## 12. AND and OR 🐰
+
+## 13. Exercise Filtering Data 🐰
+
+## 14. Exercise The Where Clause 🐰
+
+## 15. The NOT Keyword 🐰
+
+## 16. Comparison Operators 🐰
+
+### 16.1 Comparison Operators 🐰
+
+## 17. Exercise Comparison Operators 🐰
+
+## 18. Logical Operators 🐰
+
 ![img](../img/110.png)
 ![img](../img/111.png)
 ![img](../img/112.png)
@@ -273,31 +430,3 @@ FROM salaries;
 ![img](../img/197.png)
 ![img](../img/198.png)
 ![img](../img/199.png)
-
-### 7.1 Aggregate Functions 🐰
-
-## 8. Exercise Aggregate Functions 🐰
-
-## 9. Commenting Your Queries 🐰
-
-### 9.1 Make comments the most important code you write! 🐰
-
-## 10. Common SELECT Mistakes 🐰
-
-## 11. Filtering Data 🐰
-
-## 12. AND and OR 🐰
-
-## 13. Exercise Filtering Data 🐰
-
-## 14. Exercise The Where Clause 🐰
-
-## 15. The NOT Keyword 🐰
-
-## 16. Comparison Operators 🐰
-
-### 16.1 Comparison Operators 🐰
-
-## 17. Exercise Comparison Operators 🐰
-
-## 18. Logical Operators 🐰
