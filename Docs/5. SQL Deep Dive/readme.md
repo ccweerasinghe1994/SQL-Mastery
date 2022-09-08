@@ -128,6 +128,152 @@ FROM "Employees".public.employees;
 
 ## 7. Aggregate Functions 🐰
 
+![img](../img/92.png)
+
+```SQL
+SELECT count(*)
+FROM employees;
+```
+
+**output**
+
+| count  |
+| :----- |
+| 300024 |
+
+![img](../img/93.png)
+
+```SQL
+SELECT max(salary)
+FROM salaries;
+```
+
+**output**
+
+| max    |
+| :----- |
+| 158220 |
+
+---
+
+```SQL
+SELECT sum(salary)
+FROM salaries;
+```
+
+**output**
+
+| sum          |
+| :----------- |
+| 181480757419 |
+
+![img](../img/94.png)
+![img](../img/95.png)
+![img](../img/96.png)
+![img](../img/97.png)
+![img](../img/98.png)
+![img](../img/99.png)
+![img](../img/100.png)
+![img](../img/101.png)
+![img](../img/102.png)
+![img](../img/103.png)
+![img](../img/104.png)
+![img](../img/105.png)
+![img](../img/106.png)
+![img](../img/107.png)
+![img](../img/108.png)
+![img](../img/109.png)
+![img](../img/110.png)
+![img](../img/111.png)
+![img](../img/112.png)
+![img](../img/113.png)
+![img](../img/114.png)
+![img](../img/115.png)
+![img](../img/116.png)
+![img](../img/117.png)
+![img](../img/118.png)
+![img](../img/119.png)
+![img](../img/120.png)
+![img](../img/121.png)
+![img](../img/122.png)
+![img](../img/123.png)
+![img](../img/124.png)
+![img](../img/125.png)
+![img](../img/126.png)
+![img](../img/127.png)
+![img](../img/128.png)
+![img](../img/129.png)
+![img](../img/130.png)
+![img](../img/131.png)
+![img](../img/132.png)
+![img](../img/133.png)
+![img](../img/134.png)
+![img](../img/135.png)
+![img](../img/136.png)
+![img](../img/137.png)
+![img](../img/138.png)
+![img](../img/139.png)
+![img](../img/140.png)
+![img](../img/141.png)
+![img](../img/142.png)
+![img](../img/143.png)
+![img](../img/144.png)
+![img](../img/145.png)
+![img](../img/146.png)
+![img](../img/147.png)
+![img](../img/148.png)
+![img](../img/149.png)
+![img](../img/150.png)
+![img](../img/151.png)
+![img](../img/152.png)
+![img](../img/153.png)
+![img](../img/154.png)
+![img](../img/155.png)
+![img](../img/156.png)
+![img](../img/157.png)
+![img](../img/158.png)
+![img](../img/159.png)
+![img](../img/160.png)
+![img](../img/161.png)
+![img](../img/162.png)
+![img](../img/163.png)
+![img](../img/164.png)
+![img](../img/165.png)
+![img](../img/166.png)
+![img](../img/167.png)
+![img](../img/168.png)
+![img](../img/169.png)
+![img](../img/170.png)
+![img](../img/171.png)
+![img](../img/172.png)
+![img](../img/173.png)
+![img](../img/174.png)
+![img](../img/175.png)
+![img](../img/176.png)
+![img](../img/177.png)
+![img](../img/178.png)
+![img](../img/179.png)
+![img](../img/180.png)
+![img](../img/181.png)
+![img](../img/182.png)
+![img](../img/183.png)
+![img](../img/184.png)
+![img](../img/185.png)
+![img](../img/186.png)
+![img](../img/187.png)
+![img](../img/188.png)
+![img](../img/189.png)
+![img](../img/190.png)
+![img](../img/191.png)
+![img](../img/192.png)
+![img](../img/193.png)
+![img](../img/194.png)
+![img](../img/195.png)
+![img](../img/196.png)
+![img](../img/197.png)
+![img](../img/198.png)
+![img](../img/199.png)
+
 ### 7.1 Aggregate Functions 🐰
 
 ## 8. Exercise Aggregate Functions 🐰
