@@ -433,7 +433,96 @@ WHERE NOT age = 55;
 
 ### 16.1 Comparison Operators 🐰
 
+[link](https://www.postgresql.org/docs/12/functions-comparison.html)
+
 ## 17. Exercise Comparison Operators 🐰
+
+**Question**
+Who over the age of 44 has an income of 100 000 or more?
+
+```SQL
+SELECT firstname, lastname
+FROM customers
+WHERE (age > 44)
+  AND income > 10000
+LIMIT 10;
+```
+
+## **output**
+
+| firstname | lastname   |
+| :-------- | :--------- |
+| VKUUXF    | ITHOMQJNYX |
+| HQNMZH    | UNUKXHJVXB |
+| JTNRNB    | LYYSHTQJRE |
+| FXDZBW    | BAXPEEKXVJ |
+| WVZTXZ    | RMEVXCQGQF |
+| LIWLAI    | PVGRMMHSEQ |
+| NCGWRC    | CJOPRHUHIE |
+| XQVVMI    | KRPGDBCQJH |
+| AGUQVI    | FFPCRUSFKI |
+| SIQANV    | QQNKJSURDA |
+
+---
+
+**Question**
+Who between the ages of 30 and 50 has an income of less than 50 000?
+
+```SQL
+SELECT firstname, lastname, age, income
+FROM customers
+WHERE (age >= 30 AND age <= 50)
+  AND income < 50000
+LIMIT 10;
+```
+
+## **output**
+
+| firstname | lastname   | age | income |
+| :-------- | :--------- | :-- | :----- |
+| XMFYXD    | WQLQHUHLFE | 44  | 40000  |
+| FUOHXX    | WMOEHWMMWM | 44  | 40000  |
+| HEJLWR    | UKDLCPZCWE | 48  | 20000  |
+| UQBLKL    | PVOFURBZMJ | 31  | 40000  |
+| ONGTCS    | UDVEXRMKNH | 39  | 40000  |
+| AJEMKC    | ZPSLCCVCPI | 47  | 20000  |
+| VAWCEX    | AGDCPNPNJZ | 49  | 40000  |
+| ZTBECR    | ZZVIFZFDSR | 34  | 40000  |
+| CGPUTV    | THGPQDWHTM | 35  | 20000  |
+| LADSQO    | JKUESHADGZ | 45  | 20000  |
+
+---
+
+**Question**
+What is the average income between the ages of 20 and 50?
+
+```SQL
+SELECT avg(income)
+FROM customers
+WHERE age <= 50
+  AND age >= 20;
+```
+
+**output**
+| avg |
+| :--- |
+| 59361.925908612832 |
+
+---
+
+**Question**
+How many female customers do we have from the state of Oregon (OR) over 20?
+
+```SQL
+SELECT COUNT(firstName)
+FROM customers
+WHERE gender = 'F' and state = 'OR' and age > 20;
+```
+
+**output**
+| count |
+| :--- |
+| 103 |
 
 ## 18. Logical Operators 🐰
 
