@@ -538,6 +538,9 @@ WHERE gender = 'F' and state = 'OR' and age > 20;
 ![img](../img/141.png)
 ![img](../img/142.png)
 ![img](../img/143.png)
+
+## 19. 19. Operator Precedence
+
 ![img](../img/144.png)
 ![img](../img/145.png)
 ![img](../img/146.png)
