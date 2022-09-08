@@ -324,6 +324,34 @@ WHERE first_name = 'Mayumi'
 
 ## 11. Filtering Data 🐰
 
+![img](../img/110.png)
+![img](../img/111.png)
+![img](../img/112.png)
+**Question**
+
+![img](../img/113.png)
+
+```SQL
+SELECT first_name
+FROM employees
+WHERE gender = 'F' LIMIT 10;
+```
+
+## **output**
+
+| first_name |
+| :--------- |
+| Bezalel    |
+| Anneke     |
+| Tzvetan    |
+| Sumant     |
+| Duangkaew  |
+| Mary       |
+| Cristinel  |
+| Kazuhide   |
+| Bojan      |
+| Suzette    |
+
 ## 12. AND and OR 🐰
 
 ## 13. Exercise Filtering Data 🐰
@@ -340,10 +368,6 @@ WHERE first_name = 'Mayumi'
 
 ## 18. Logical Operators 🐰
 
-![img](../img/110.png)
-![img](../img/111.png)
-![img](../img/112.png)
-![img](../img/113.png)
 ![img](../img/114.png)
 ![img](../img/115.png)
 ![img](../img/116.png)
