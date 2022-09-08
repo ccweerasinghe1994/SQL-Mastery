@@ -420,12 +420,6 @@ WHERE NOT age = 55;
 
 ## 16. Comparison Operators 🐰
 
-### 16.1 Comparison Operators 🐰
-
-## 17. Exercise Comparison Operators 🐰
-
-## 18. Logical Operators 🐰
-
 ![img](../img/122.png)
 ![img](../img/123.png)
 ![img](../img/124.png)
@@ -436,6 +430,13 @@ WHERE NOT age = 55;
 ![img](../img/129.png)
 ![img](../img/130.png)
 ![img](../img/131.png)
+
+### 16.1 Comparison Operators 🐰
+
+## 17. Exercise Comparison Operators 🐰
+
+## 18. Logical Operators 🐰
+
 ![img](../img/132.png)
 ![img](../img/133.png)
 ![img](../img/134.png)
