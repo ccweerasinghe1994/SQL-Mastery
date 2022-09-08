@@ -551,6 +551,17 @@ WHERE gender = 'F' and state = 'OR' and age > 20;
 ![img](../img/151.png)
 ![img](../img/152.png)
 ![img](../img/153.png)
+
+### 19.1 Operator Precedence
+
+[Operator Precedence](https://www.postgresql.org/docs/14/sql-syntax-lexical.html#SQL-PRECEDENCE)
+
+### 19.2 Expression Evaluation Rules
+
+[Expression Evaluation Rules](https://www.postgresql.org/docs/14/sql-expressions.html#SYNTAX-EXPRESS-EVAL)
+
+## 20. Operator Precedence 2
+
 ![img](../img/154.png)
 ![img](../img/155.png)
 ![img](../img/156.png)
@@ -567,6 +578,73 @@ WHERE gender = 'F' and state = 'OR' and age > 20;
 ![img](../img/167.png)
 ![img](../img/168.png)
 ![img](../img/169.png)
+
+### 21. Exercise Operator Precedence
+
+## 22. Checking For NULL Values
+
+## 23. IS Keyword
+
+## 24. NULL Coalescing
+
+## 25. Exercise Null Value Coalescing
+
+## 26. 3 Valued Logic
+
+## 27. Exercise 3 Valued Logic
+
+## 28. BETWEEN + AND
+
+## 29. IN Keyword
+
+## 30. Exercise IN Keyword
+
+## 31. LIKE
+
+## 32. Exercise Like Keyword
+
+## 33. Dates And Timezones
+
+## 33.1 UTC is enough right
+
+## 34. Setting Up Timezones
+
+## 35. How Do We Format Date And Time
+
+## 36. Timestamps
+
+## 37. Date Functions
+
+## 38. Date Difference And Casting
+
+## 39. Age Calculation
+
+## 40. Extracting Information
+
+## 41. Intervals
+
+## 42. Exercise Date and Timestamp
+
+## 43. DISTINCT
+
+## 44. Exercise Distinct Keyword
+
+## 45. Sorting Data
+
+## 46. Multi Table SELECT
+
+## 47. Inner Join
+
+## 48. Self Join
+
+## 49. Outer Join
+
+## 50. Less Common Joins
+
+## 51. Inner-Join Exercises
+
+## 52. USING Keyword
+
 ![img](../img/170.png)
 ![img](../img/171.png)
 ![img](../img/172.png)
