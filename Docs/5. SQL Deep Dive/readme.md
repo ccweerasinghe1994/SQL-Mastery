@@ -581,6 +581,55 @@ WHERE gender = 'F' and state = 'OR' and age > 20;
 
 ### 21. Exercise Operator Precedence
 
+---
+
+**Question**
+Select people either under 30 or over 50 with an income above 50000
+Include people that are 50
+that are from either Japan or Australia
+
+```SQL
+SELECT age, income, country
+FROM customers
+WHERE (country = 'Japan' OR country = 'Australia')
+  AND (age > 50 OR age < 30)
+  AND income > 50000
+LIMIT 10;
+
+```
+
+**output**
+| age | income | country |
+| :--- | :--- | :--- |
+| 52 | 80000 | Australia |
+| 86 | 100000 | Japan |
+| 66 | 60000 | Australia |
+| 22 | 80000 | Australia |
+| 55 | 100000 | Japan |
+| 56 | 100000 | Japan |
+| 88 | 100000 | Japan |
+| 56 | 60000 | Australia |
+| 59 | 60000 | Australia |
+| 81 | 80000 | Australia |
+
+---
+
+**Question**
+What was our total sales in June of 2004 for orders over 100 dollars?
+
+```SQL
+SELECT sum(netamount)
+FROM orders
+WHERE orderdate >= '2004-06-01'
+  AND orderdate <= '2004-06-30'
+  AND netamount > 100;
+```
+
+**output**
+| sum |
+| :--- |
+| 188060.29 |
+
 ## 22. Checking For NULL Values
 
 ## 23. IS Keyword
