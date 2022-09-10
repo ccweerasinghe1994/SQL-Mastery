@@ -655,6 +655,12 @@ WHERE orderdate >= '2004-06-01'
 
 ## 24. NULL Coalescing
 
+![img](../img/187.png)
+![img](../img/188.png)
+![img](../img/189.png)
+![img](../img/190.png)
+![img](../img/191.png)
+
 ## 25. Exercise Null Value Coalescing
 
 ## 26. 3 Valued Logic
@@ -713,11 +719,6 @@ WHERE orderdate >= '2004-06-01'
 
 ## 52. USING Keyword
 
-![img](../img/187.png)
-![img](../img/188.png)
-![img](../img/189.png)
-![img](../img/190.png)
-![img](../img/191.png)
 ![img](../img/192.png)
 ![img](../img/193.png)
 ![img](../img/194.png)
