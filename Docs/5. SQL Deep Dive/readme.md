@@ -643,6 +643,16 @@ WHERE orderdate >= '2004-06-01'
 
 ## 23. IS Keyword
 
+![img](../img/178.png)
+![img](../img/179.png)
+![img](../img/180.png)
+![img](../img/181.png)
+![img](../img/182.png)
+![img](../img/183.png)
+![img](../img/184.png)
+![img](../img/185.png)
+![img](../img/186.png)
+
 ## 24. NULL Coalescing
 
 ## 25. Exercise Null Value Coalescing
@@ -703,15 +713,6 @@ WHERE orderdate >= '2004-06-01'
 
 ## 52. USING Keyword
 
-![img](../img/178.png)
-![img](../img/179.png)
-![img](../img/180.png)
-![img](../img/181.png)
-![img](../img/182.png)
-![img](../img/183.png)
-![img](../img/184.png)
-![img](../img/185.png)
-![img](../img/186.png)
 ![img](../img/187.png)
 ![img](../img/188.png)
 ![img](../img/189.png)
