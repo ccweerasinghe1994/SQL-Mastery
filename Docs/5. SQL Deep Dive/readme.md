@@ -632,6 +632,15 @@ WHERE orderdate >= '2004-06-01'
 
 ## 22. Checking For NULL Values
 
+![img](../img/170.png)
+![img](../img/171.png)
+![img](../img/172.png)
+![img](../img/173.png)
+![img](../img/174.png)
+![img](../img/175.png)
+![img](../img/176.png)
+![img](../img/177.png)
+
 ## 23. IS Keyword
 
 ## 24. NULL Coalescing
@@ -694,14 +703,6 @@ WHERE orderdate >= '2004-06-01'
 
 ## 52. USING Keyword
 
-![img](../img/170.png)
-![img](../img/171.png)
-![img](../img/172.png)
-![img](../img/173.png)
-![img](../img/174.png)
-![img](../img/175.png)
-![img](../img/176.png)
-![img](../img/177.png)
 ![img](../img/178.png)
 ![img](../img/179.png)
 ![img](../img/180.png)
