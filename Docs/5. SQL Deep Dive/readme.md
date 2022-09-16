@@ -778,6 +778,40 @@ WHERE emp_no IN (10008, 10001, 10003);
 
 ## 30. Exercise IN Keyword
 
+**Question**
+How many orders were made by customer 7888, 1082, 12808, 9623
+
+```SQL
+SELECT count(*)
+FROM orders
+WHERE customerid IN (7888, 1082, 12808, 9623);
+```
+
+**output**
+
+| count |
+| :---- |
+| 6     |
+
+---
+
+**Question**
+How many cities are in the district of Zuid-Holland, Noord-Brabant and Utrecht?
+
+```SQL
+SELECT count(*)
+FROM city
+WHERE district IN ('Zuid-Holland', 'Noord-Brabant', 'Utrecht');
+```
+
+**output**
+
+| count |
+| :---- |
+| 12    |
+
+## 31. LIKE
+
 ![img](../img2/23.png)
 ![img](../img2/24.png)
 ![img](../img2/25.png)
@@ -785,8 +819,6 @@ WHERE emp_no IN (10008, 10001, 10003);
 ![img](../img2/27.png)
 ![img](../img2/28.png)
 ![img](../img2/29.png)
-
-## 31. LIKE
 
 ## 32. Exercise Like Keyword
 
