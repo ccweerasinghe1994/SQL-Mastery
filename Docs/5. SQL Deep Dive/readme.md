@@ -756,6 +756,9 @@ where age IS null;
 ![img](../img2/18.png)
 ![img](../img2/19.png)
 ![img](../img2/20.png)
+
+## 29. IN Keyword
+
 ![img](../img2/21.png)
 ![img](../img2/22.png)
 ![img](../img2/23.png)
@@ -766,7 +769,6 @@ where age IS null;
 ![img](../img2/28.png)
 ![img](../img2/29.png)
 
-## 29. IN Keyword
 
 ## 30. Exercise IN Keyword
 
