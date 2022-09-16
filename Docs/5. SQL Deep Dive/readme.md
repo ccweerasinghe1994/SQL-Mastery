@@ -761,6 +761,23 @@ where age IS null;
 
 ![img](../img2/21.png)
 ![img](../img2/22.png)
+
+```SQL
+SELECT *
+FROM "Employees".public.employees
+WHERE emp_no IN (10008, 10001, 10003);
+```
+
+**output**
+
+| emp_no | birth_date | first_name | last_name | gender | hire_date  |
+| :----- | :--------- | :--------- | :-------- | :----- | :--------- |
+| 10001  | 1953-09-02 | Georgi     | Facello   | M      | 1986-06-26 |
+| 10003  | 1959-12-03 | Parto      | Bamford   | M      | 1986-08-28 |
+| 10008  | 1958-02-19 | Saniya     | Kalloufi  | M      | 1994-09-15 |
+
+## 30. Exercise IN Keyword
+
 ![img](../img2/23.png)
 ![img](../img2/24.png)
 ![img](../img2/25.png)
@@ -768,9 +785,6 @@ where age IS null;
 ![img](../img2/27.png)
 ![img](../img2/28.png)
 ![img](../img2/29.png)
-
-
-## 30. Exercise IN Keyword
 
 ## 31. LIKE
 
