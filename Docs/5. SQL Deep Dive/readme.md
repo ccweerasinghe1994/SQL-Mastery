@@ -663,9 +663,65 @@ WHERE orderdate >= '2004-06-01'
 
 ## 25. Exercise Null Value Coalescing
 
+**Question**
+Assuming a students minimum age for the class is 15, what is the average age of a student?
+
+```SQL
+SELECT avg(coalesce(age, 15))
+from "Student";
+```
+
+**output**
+| avg |
+| :--- |
+| 30.4000000000000000 |
+
+---
+
+**Question**
+Replace all empty first or last names with a default?
+
+```SQL
+SELECT coalesce(name, 'fallback'),coalesce(lastname, 'lastname')
+from "Student";
+```
+
+**output**
+
 ## 26. 3 Valued Logic
 
+![img](../img2/1.png)
+![img](../img2/2.png)
+![img](../img2/3.png)
+![img](../img2/4.png)
+![img](../img2/5.png)
+![img](../img2/6.png)
+![img](../img2/7.png)
+![img](../img2/8.png)
+![img](../img2/9.png)
+![img](../img2/10.png)
+![img](../img2/11.png)
+![img](../img2/12.png)
+![img](../img2/13.png)
+![img](../img2/14.png)
+
 ## 27. Exercise 3 Valued Logic
+
+![img](../img2/15.png)
+![img](../img2/16.png)
+![img](../img2/17.png)
+![img](../img2/18.png)
+![img](../img2/19.png)
+![img](../img2/20.png)
+![img](../img2/21.png)
+![img](../img2/22.png)
+![img](../img2/23.png)
+![img](../img2/24.png)
+![img](../img2/25.png)
+![img](../img2/26.png)
+![img](../img2/27.png)
+![img](../img2/28.png)
+![img](../img2/29.png)
 
 ## 28. BETWEEN + AND
 
@@ -718,12 +774,3 @@ WHERE orderdate >= '2004-06-01'
 ## 51. Inner-Join Exercises
 
 ## 52. USING Keyword
-
-![img](../img/192.png)
-![img](../img/193.png)
-![img](../img/194.png)
-![img](../img/195.png)
-![img](../img/196.png)
-![img](../img/197.png)
-![img](../img/198.png)
-![img](../img/199.png)
