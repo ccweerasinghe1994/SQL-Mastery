@@ -707,6 +707,49 @@ from "Student";
 
 ## 27. Exercise 3 Valued Logic
 
+**Question**
+adjust the following query to display the null values as "No Address"
+
+```SQL
+SELECT coalesce(address2, 'No Address') AS "Address"
+FROM customers
+limit 5;
+```
+
+**output**
+| Address |
+| :--- |
+| No Address |
+| No Address |
+| No Address |
+| No Address |
+| No Address |
+
+---
+
+**Question**
+Fix the following query to apply proper 3VL
+
+```SQL
+SELECT *
+FROM customers
+WHERE address2 IS NOT null;
+
+```
+
+---
+
+**Question**
+Fix the following query to apply proper 3VL
+
+```SQL
+SELECT coalesce(lastName, 'Empty'), age
+from customers
+where age IS null;
+```
+
+## 28. BETWEEN + AND
+
 ![img](../img2/15.png)
 ![img](../img2/16.png)
 ![img](../img2/17.png)
@@ -722,8 +765,6 @@ from "Student";
 ![img](../img2/27.png)
 ![img](../img2/28.png)
 ![img](../img2/29.png)
-
-## 28. BETWEEN + AND
 
 ## 29. IN Keyword
 
