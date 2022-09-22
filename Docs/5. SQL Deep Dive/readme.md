@@ -993,9 +993,38 @@ SHOW TIMEZONE ;
 
 ## 34. Setting Up Timezones
 
+let's set up postgres so every session for the postgres user will show dates in UTC
+
+```SQL
+-- BY DEFAULT POSTGRES WILL SAVE EVERYTHING IN UTC
+-- THIS IS FOR THE SESSION
+SET TIME ZONE 'UTC';
+
+SHOW TIMEZONE ;
+-- ALL OUR FUTURE SESSIONS WILL BE IN UTC
+ALTER USER postgres SET timezone = 'UTC';
+
+SHOW TIMEZONE;
+
+
+```
+
+**output**
+
+| TimeZone |
+| :--- |
+| UTC |
+
 ## 35. How Do We Format Date And Time
 
+![img](../img2/42.png)
+![img](../img2/43.png)
+![img](../img2/44.png)
+![img](../img2/45.png)
+
 ## 36. Timestamps
+
+![img](../img2/46.png)
 
 ## 37. Date Functions
 
