@@ -1025,6 +1025,44 @@ SHOW TIMEZONE;
 ## 36. Timestamps
 
 ![img](../img2/46.png)
+![img](../img2/47.png)
+
+```SQL
+SELECT now();
+```
+
+**output**
+
+| now |
+| :--- |
+| 2022-09-22 04:57:14.158483 +00:00 |
+
+let's create a table to store Timestamps
+
+```sql
+-- CREATE THE TABLE
+CREATE TABLE timezones
+(
+    ts TIMESTAMP WITHOUT TIME ZONE,
+    tz TIMESTAMP WITH TIME ZONE
+);
+
+-- ADD DATA
+INSERT INTO timezones
+VALUES (TIMESTAMP WITHOUT TIME ZONE '2000-01-01 10:00:00-5',
+        TIMESTAMP WITH TIME ZONE '2000-01-01 10:00:00-5');
+-- GET THE DATA
+SELECT *
+FROM timezones;
+```
+
+**output**
+
+| ts | tz |
+| :--- | :--- |
+| 2000-01-01 10:00:00.000000 | 2000-01-01 15:00:00.000000 +00:00 |
+
+here we can see the without the time stam is storing the data without using the time zone values which is incorrect in most senarios but when we are using the timezons postgres take the value into account.
 
 ## 37. Date Functions
 
