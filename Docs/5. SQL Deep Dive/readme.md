@@ -1136,6 +1136,24 @@ here we can see the without the time stam is storing the data without using the 
 
 ## 37. Date Functions
 
+```SQL
+-- TO GET THE CURRENT DATE
+SELECT now()::date;
+SELECT CURRENT_DATE;
+
+-- TO FORMAT THE DATE
+SELECT now();
+SELECT to_char(now(),'dd/mm/yyyy');
+```
+
+![img](./../img2/49.png)
+![img](./../img2/50.png)
+**output**
+
+| to\_char |
+| :--- |
+| 22/09/2022 |
+
 ## 38. Date Difference And Casting
 
 ## 39. Age Calculation
