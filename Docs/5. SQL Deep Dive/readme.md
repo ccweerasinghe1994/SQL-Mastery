@@ -819,8 +819,146 @@ WHERE district IN ('Zuid-Holland', 'Noord-Brabant', 'Utrecht');
 ![img](../img2/27.png)
 ![img](../img2/28.png)
 ![img](../img2/29.png)
+![img](../img2/30.png)
+![img](../img2/31.png)
+![img](../img2/32.png)
+
+employees who's names are starting with G and End with ger
+
+```SQL
+SELECT *
+FROM employees
+WHERE first_name ILIKE 'g%ger'
+LIMIT 10;
+```
+
+**output**
+
+| emp\_no | birth\_date | first\_name | last\_name | gender | hire\_date |
+| :--- | :--- | :--- | :--- | :--- | :--- |
+| 10202 | 1956-01-05 | Greger | Lichtner | M | 1991-10-06 |
+| 10422 | 1954-06-02 | Greger | Rubsam | F | 1990-12-07 |
+| 11084 | 1955-07-03 | Greger | Senzako | M | 1990-05-31 |
+| 13902 | 1954-04-20 | Greger | Kilgore | M | 1993-07-04 |
+| 13935 | 1961-07-20 | Greger | Gopalakrishnan | F | 1988-05-16 |
+| 14848 | 1957-06-14 | Greger | Tagansky | M | 1997-05-27 |
+| 16740 | 1957-08-17 | Greger | Oehlmann | M | 1986-03-06 |
+| 18171 | 1957-11-26 | Greger | Litzler | M | 1995-05-24 |
+| 25772 | 1952-03-11 | Greger | Marrevee | M | 1988-04-09 |
+| 26293 | 1963-02-06 | Greger | Peyn | F | 1994-12-24 |
 
 ## 32. Exercise Like Keyword
+
+**Question**
+Find the age of all employees who's name starts with M.
+
+```SQL
+SELECT emp_no, first_name, EXTRACT(YEAR FROM age(birth_date)) AS "age"
+FROM employees
+WHERE first_name LIKE 'M%'
+LIMIT 10;
+```
+
+**output**
+| emp\_no | first\_name | age |
+| :--- | :--- | :--- |
+| 10011 | Mary | 68 |
+| 10020 | Mayuko | 69 |
+| 10042 | Magy | 66 |
+| 10044 | Mingsen | 61 |
+| 10045 | Moss | 65 |
+| 10054 | Mayumi | 65 |
+| 10069 | Margareta | 62 |
+| 10074 | Mokhtar | 67 |
+| 10077 | Mona | 58 |
+| 10109 | Mariusz | 63 |
+---
+**Question**
+How many people's name start with A and end with R?
+
+```SQL
+SELECT count(*)
+FROM employees
+WHERE first_name ILIKE 'A%R';
+```
+
+**output**
+
+| count |
+| :--- |
+| 1846 |
+
+---
+
+**Question**
+How many people's zipcode have a 2 in it?.
+
+```SQL
+SELECT count(*)
+FROM customers
+WHERE zip::text LIKE '%2%';
+```
+
+**output**
+
+| count |
+| :--- |
+| 4211 |
+
+---
+
+**Question**
+How many people's zipcode start with 2 with the 3rd character being a 1.
+
+```SQL
+SELECT count(*)
+FROM customers
+WHERE zip::text LIKE '2_1%';
+```
+
+**output**
+| count |
+| :--- |
+| 109 |
+
+---
+
+**Question**
+Which states have phone numbers starting with 302?
+
+```SQL
+SELECT phone, COALESCE(state, 'No State')
+FROM customers
+WHERE phone::text LIKE '302%';
+```
+
+**output**
+
+| phone | coalesce |
+| :--- | :--- |
+| 3029418206 | DE |
+| 3021789304 | MT |
+| 3026419807 | FL |
+| 3026303076 | MT |
+| 3023624404 | NH |
+| 3026653788 | NE |
+| 3028183531 | DE |
+| 3027434499 | AL |
+| 3029948454 | NE |
+| 3024827254 | OK |
+| 3023877961 | AR |
+| 3028920560 | IL |
+| 3028070970 | MD |
+| 3028738895 | IA |
+| 3026901691 | NY |
+| 3020804778 | No State |
+| 3026850792 | No State |
+| 3023953968 | No State |
+| 3028282136 | No State |
+| 3026231256 | No State |
+| 3028971317 | No State |
+| 3021694672 | No State |
+| 3024863329 | No State |
 
 ## 33. Dates And Timezones
 
