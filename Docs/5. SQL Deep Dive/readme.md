@@ -962,7 +962,34 @@ WHERE phone::text LIKE '302%';
 
 ## 33. Dates And Timezones
 
+![img](../img2/33.png)
+![img](../img2/34.png)
+![img](../img2/35.png)
+![img](../img2/36.png)
+![img](../img2/37.png)
+![img](../img2/38.png)
+![img](../img2/39.png)
+![img](../img2/40.png)
+
+this will set the time zone for the current session
+
+![img](../img2/41.png)
+
+to see the time zone
+
+```sql
+SHOW TIMEZONE ;
+```
+
+**output**
+
+| TimeZone |
+| :--- |
+| UTC |
+
 ## 33.1 UTC is enough right
+
+[UTC is enough right](https://zachholman.com/talk/utc-is-enough-for-everyone-right)
 
 ## 34. Setting Up Timezones
 
