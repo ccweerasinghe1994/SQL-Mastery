@@ -1136,9 +1136,81 @@ here we can see the without the time stam is storing the data without using the 
 
 ## 37. Date Functions
 
+```SQL
+-- TO GET THE CURRENT DATE
+SELECT now()::date;
+SELECT CURRENT_DATE;
+
+-- TO FORMAT THE DATE
+SELECT now();
+SELECT to_char(now(),'dd/mm/yyyy');
+```
+
+![img](./../img2/49.png)
+![img](./../img2/50.png)
+**output**
+
+| to\_char |
+| :--- |
+| 22/09/2022 |
+
 ## 38. Date Difference And Casting
 
+![img](./../img2/51.png)
+![img](./../img2/52.png)
+
+```SQL
+SELECT now() - '1800/01/01' AS "time in days";
+```
+
+**output**
+
+| time in days |
+| :--- |
+| 0 years 0 mons 81349 days 2 hours 27 mins 44.177417 secs |
+
+---
+
+```SQL
+-- WE ARE CASTING THE '' TO A DATE
+SELECT DATE '1800/01/01';
+SELECT '1800/01/01'::date;
+```
+
+**output**
+
+| date |
+| :--- |
+| 1800-01-01 |
+
+![img](./../img2/53.png)
+
 ## 39. Age Calculation
+
+![img](./../img2/54.png)
+
+```SQL
+SELECT age('1994-03-10'::date);
+```
+
+**output**
+
+| age |
+| :--- |
+| 28 years 6 mons 13 days 0 hours 0 mins 0.0 secs |
+
+---
+
+```SQL
+-- WE CAN CALCULATE AGE BETWEEN TWO DIFFERENT TIMES
+SELECT age('1994-03-10'::date, '1993-08-24'::date); 
+```
+
+**output**
+
+| age |
+| :--- |
+| 0 years 6 mons 17 days 0 hours 0 mins 0.0 secs |
 
 ## 40. Extracting Information
 
