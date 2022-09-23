@@ -1187,6 +1187,31 @@ SELECT '1800/01/01'::date;
 
 ## 39. Age Calculation
 
+![img](./../img2/54.png)
+
+```SQL
+SELECT age('1994-03-10'::date);
+```
+
+**output**
+
+| age |
+| :--- |
+| 28 years 6 mons 13 days 0 hours 0 mins 0.0 secs |
+
+---
+
+```SQL
+-- WE CAN CALCULATE AGE BETWEEN TWO DIFFERENT TIMES
+SELECT age('1994-03-10'::date, '1993-08-24'::date); 
+```
+
+**output**
+
+| age |
+| :--- |
+| 0 years 6 mons 17 days 0 hours 0 mins 0.0 secs |
+
 ## 40. Extracting Information
 
 ## 41. Intervals
