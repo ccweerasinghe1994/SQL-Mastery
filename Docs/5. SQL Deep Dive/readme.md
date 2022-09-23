@@ -1156,6 +1156,35 @@ SELECT to_char(now(),'dd/mm/yyyy');
 
 ## 38. Date Difference And Casting
 
+![img](./../img2/51.png)
+![img](./../img2/52.png)
+
+```SQL
+SELECT now() - '1800/01/01' AS "time in days";
+```
+
+**output**
+
+| time in days |
+| :--- |
+| 0 years 0 mons 81349 days 2 hours 27 mins 44.177417 secs |
+
+---
+
+```SQL
+-- WE ARE CASTING THE '' TO A DATE
+SELECT DATE '1800/01/01';
+SELECT '1800/01/01'::date;
+```
+
+**output**
+
+| date |
+| :--- |
+| 1800-01-01 |
+
+![img](./../img2/53.png)
+
 ## 39. Age Calculation
 
 ## 40. Extracting Information
