@@ -57,6 +57,12 @@
   - [38. Date Difference And Casting](#38-date-difference-and-casting)
   - [39. Age Calculation](#39-age-calculation)
   - [40. Extracting Information](#40-extracting-information)
+  - [| 22 |](#-22-)
+  - [| 11 |](#-11-)
+    - [round A DATE](#round-a-date)
+  - [| 1992-01-01 00:00:00.000000 +00:00 |](#-1992-01-01-000000000000-0000-)
+  - [| 1992-11-01 00:00:00.000000 +00:00 |](#-1992-11-01-000000000000-0000-)
+  - [| 2022-09-27 00:00:00.000000 +00:00 |](#-2022-09-27-000000000000-0000-)
   - [41. Intervals](#41-intervals)
   - [42. Exercise Date and Timestamp](#42-exercise-date-and-timestamp)
   - [43. DISTINCT](#43-distinct)
@@ -1213,6 +1219,67 @@ SELECT age('1994-03-10'::date, '1993-08-24'::date);
 | 0 years 6 mons 17 days 0 hours 0 mins 0.0 secs |
 
 ## 40. Extracting Information
+
+```SQL
+SELECT extract(DAY FROM '1992/11/22'::date) AS DAY;
+```
+
+**output**
+| day |
+| :--- |
+| 22 |
+---
+
+```SQL
+SELECT extract(MONTH FROM '1992/11/22'::date) AS MONTH;
+```
+
+**output**
+| month |
+| :--- |
+| 11 |
+---
+
+```SQL
+SELECT extract(YEAR FROM '1992/11/22'::date) AS YEAR;
+```
+
+**output**
+| year |
+| :--- |
+| 1992 |
+
+### round A DATE
+
+```SQL
+SELECT date_trunc('YEAR','1992/11/22'::date);
+```
+
+**output**
+| year |
+| :--- |
+| 1992-01-01 00:00:00.000000 +00:00 |
+---
+
+```SQL
+SELECT date_trunc('MONTH','1992/11/22'::date);
+```
+
+**output**
+| month |
+| :--- |
+| 1992-11-01 00:00:00.000000 +00:00 |
+---
+
+```SQL
+SELECT date_trunc('DAY',CURRENT_TIMESTAMP);
+```
+
+**output**
+| date |
+| :--- |
+| 2022-09-27 00:00:00.000000 +00:00 |
+---
 
 ## 41. Intervals
 
