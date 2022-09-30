@@ -1321,6 +1321,113 @@ SELECT EXTRACT(YEAR FROM INTERVAL '5 YEARS 20 MONTHS');
 
 ## 42. Exercise Date and Timestamp
 
+**Question**
+Get me all the employees above 60, use the appropriate date functions
+
+```SQL
+SELECT count(*)
+FROM employees
+WHERE age(birth_date::DATE) > INTERVAL '61 years';
+
+-- alternative
+SELECT count(birth_date) FROM employees
+WHERE birth_date < now() - interval '61 years'; -- 61 years before the current date
+
+SELECT count(*) FROM employees
+WHERE (
+   EXTRACT (YEAR FROM AGE(birth_date))
+) > 60;
+
+```
+
+**output**
+
+| count |
+| :--- |
+| 223206 |
+
+---
+
+**Question**
+How many employees where hired in February?
+
+```SQL
+SELECT count(*)
+FROM employees
+WHERE EXTRACT(MONTH FROM hire_date::date) = 2;
+
+SELECT count(emp_no) FROM employees
+where EXTRACT (MONTH FROM hire_date) = 2;
+```
+
+**output**
+
+| count |
+| :--- |
+| 24448 |
+
+---
+
+**Question**
+
+How many employees were born in november?
+
+```SQL
+SELECT count(*)
+FROM employees
+WHERE EXTRACT(MONTH FROM birth_date) = 11;
+
+SELECT COUNT(emp_no) FROM employees
+WHERE EXTRACT (MONTH FROM birth_date) = 11;
+```
+
+**output**
+
+| count |
+| :--- |
+| 24500 |
+
+---
+
+**Question**
+
+Who is the oldest employee? (Use the analytical function MAX)
+
+```SQL
+SELECT MAX(age(birth_date))
+FROM employees;
+```
+
+**output**
+
+| max |
+| :--- |
+| 70 years 7 mons 29 days 0 hours 0 mins 0.0 secs |
+
+---
+
+**Question**
+
+How many orders were made in January 2004?
+
+```SQL
+SELECT COUNT(orderid)
+FROM orders
+WHERE DATE_TRUNC('month', orderdate) = date '2004-01-01';
+
+SELECT count(*)
+FROM orders WHERE to_char(orderdate::date,'YYYY-MM') = '2004-01' ;
+```
+
+**output**
+
+| count |
+| :--- |
+| 1000 |
+
+---
+
+
 ## 43. DISTINCT
 
 ## 44. Exercise Distinct Keyword
