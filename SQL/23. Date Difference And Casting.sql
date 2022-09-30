@@ -1,0 +1,6 @@
+SELECT now() - '1800/01/01' AS "time in days";
+
+
+-- WE ARE CASTING THE '' TO A DATE
+SELECT DATE '1800/01/01';
+SELECT '1800/01/01'::date;
