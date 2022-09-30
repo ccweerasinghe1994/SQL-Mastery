@@ -1283,6 +1283,42 @@ SELECT date_trunc('DAY',CURRENT_TIMESTAMP);
 
 ## 41. Intervals
 
+![IMG](../img2/55.png)
+![IMG](../img2/56.png)
+![IMG](../img2/57.png)
+![IMG](../img2/58.png)
+![IMG](../img2/59.png)
+
+```SQL
+
+```
+
+**output**
+
+```SQL
+SELECT *
+FROM orders
+WHERE orderdate <= '2004-01-31'::date - INTERVAL '29 days'
+ORDER BY orderdate LIMIT 3;
+```
+
+**output**
+| orderid | orderdate | customerid | netamount | tax | totalamount |
+| :--- | :--- | :--- | :--- | :--- | :--- |
+| 2 | 2004-01-01 | 4858 | 54.90 | 4.53 | 59.43 |
+| 78 | 2004-01-01 | 19921 | 145.50 | 12.00 | 157.50 |
+| 131 | 2004-01-01 | 351 | 81.68 | 6.74 | 88.42 |
+
+```SQL
+SELECT EXTRACT(YEAR FROM INTERVAL '5 YEARS 20 MONTHS');
+```
+
+**output**
+
+| extract |
+| :--- |
+| 6 |
+
 ## 42. Exercise Date and Timestamp
 
 ## 43. DISTINCT
