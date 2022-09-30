@@ -1427,10 +1427,76 @@ FROM orders WHERE to_char(orderdate::date,'YYYY-MM') = '2004-01' ;
 
 ---
 
-
 ## 43. DISTINCT
 
+![IMG](../img2/60.png)
+![IMG](../img2/61.png)
+![IMG](../img2/62.png)
+
+**Question**
+
+```SQL
+SELECT DISTINCT emp_no, from_date
+FROM salaries LIMIT 10;
+```
+
+**output**
+
+| emp\_no | from\_date |
+| :--- | :--- |
+| 10001 | 1986-06-26 |
+| 10001 | 1987-06-26 |
+| 10001 | 1988-06-25 |
+| 10001 | 1989-06-25 |
+| 10001 | 1990-06-25 |
+| 10001 | 1991-06-25 |
+| 10001 | 1992-06-24 |
+| 10001 | 1993-06-24 |
+| 10001 | 1994-06-24 |
+| 10001 | 1995-06-24 |
+
 ## 44. Exercise Distinct Keyword
+
+```SQL
+SELECT DISTINCT title
+FROM titles;
+
+```
+
+**output**
+| title |
+| :--- |
+| Engineer |
+| Senior Engineer |
+| Manager |
+| Assistant Engineer |
+| Staff |
+| Senior Staff |
+| Technique Leader |
+
+---
+
+```SQL
+SELECT count(DISTINCT birth_date)
+FROM employees;
+```
+
+**output**
+| count |
+| :--- |
+| 4750 |
+
+---
+
+```SQL
+SELECT count(DISTINCT lifeexpectancy)
+FROM country WHERE lifeexpectancy IS NOT NULL;
+```
+
+**output**
+| count |
+| :--- |
+| 160 |
 
 ## 45. Sorting Data
 
