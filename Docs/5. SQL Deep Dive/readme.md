@@ -57,6 +57,12 @@
   - [38. Date Difference And Casting](#38-date-difference-and-casting)
   - [39. Age Calculation](#39-age-calculation)
   - [40. Extracting Information](#40-extracting-information)
+  - [| 22 |](#-22-)
+  - [| 11 |](#-11-)
+    - [round A DATE](#round-a-date)
+  - [| 1992-01-01 00:00:00.000000 +00:00 |](#-1992-01-01-000000000000-0000-)
+  - [| 1992-11-01 00:00:00.000000 +00:00 |](#-1992-11-01-000000000000-0000-)
+  - [| 2022-09-27 00:00:00.000000 +00:00 |](#-2022-09-27-000000000000-0000-)
   - [41. Intervals](#41-intervals)
   - [42. Exercise Date and Timestamp](#42-exercise-date-and-timestamp)
   - [43. DISTINCT](#43-distinct)
@@ -1136,19 +1142,361 @@ here we can see the without the time stam is storing the data without using the 
 
 ## 37. Date Functions
 
+```SQL
+-- TO GET THE CURRENT DATE
+SELECT now()::date;
+SELECT CURRENT_DATE;
+
+-- TO FORMAT THE DATE
+SELECT now();
+SELECT to_char(now(),'dd/mm/yyyy');
+```
+
+![img](./../img2/49.png)
+![img](./../img2/50.png)
+**output**
+
+| to\_char |
+| :--- |
+| 22/09/2022 |
+
 ## 38. Date Difference And Casting
+
+![img](./../img2/51.png)
+![img](./../img2/52.png)
+
+```SQL
+SELECT now() - '1800/01/01' AS "time in days";
+```
+
+**output**
+
+| time in days |
+| :--- |
+| 0 years 0 mons 81349 days 2 hours 27 mins 44.177417 secs |
+
+---
+
+```SQL
+-- WE ARE CASTING THE '' TO A DATE
+SELECT DATE '1800/01/01';
+SELECT '1800/01/01'::date;
+```
+
+**output**
+
+| date |
+| :--- |
+| 1800-01-01 |
+
+![img](./../img2/53.png)
 
 ## 39. Age Calculation
 
+![img](./../img2/54.png)
+
+```SQL
+SELECT age('1994-03-10'::date);
+```
+
+**output**
+
+| age |
+| :--- |
+| 28 years 6 mons 13 days 0 hours 0 mins 0.0 secs |
+
+---
+
+```SQL
+-- WE CAN CALCULATE AGE BETWEEN TWO DIFFERENT TIMES
+SELECT age('1994-03-10'::date, '1993-08-24'::date); 
+```
+
+**output**
+
+| age |
+| :--- |
+| 0 years 6 mons 17 days 0 hours 0 mins 0.0 secs |
+
 ## 40. Extracting Information
+
+```SQL
+SELECT extract(DAY FROM '1992/11/22'::date) AS DAY;
+```
+
+**output**
+| day |
+| :--- |
+| 22 |
+---
+
+```SQL
+SELECT extract(MONTH FROM '1992/11/22'::date) AS MONTH;
+```
+
+**output**
+| month |
+| :--- |
+| 11 |
+---
+
+```SQL
+SELECT extract(YEAR FROM '1992/11/22'::date) AS YEAR;
+```
+
+**output**
+| year |
+| :--- |
+| 1992 |
+
+### round A DATE
+
+```SQL
+SELECT date_trunc('YEAR','1992/11/22'::date);
+```
+
+**output**
+| year |
+| :--- |
+| 1992-01-01 00:00:00.000000 +00:00 |
+---
+
+```SQL
+SELECT date_trunc('MONTH','1992/11/22'::date);
+```
+
+**output**
+| month |
+| :--- |
+| 1992-11-01 00:00:00.000000 +00:00 |
+---
+
+```SQL
+SELECT date_trunc('DAY',CURRENT_TIMESTAMP);
+```
+
+**output**
+| date |
+| :--- |
+| 2022-09-27 00:00:00.000000 +00:00 |
+---
 
 ## 41. Intervals
 
+![IMG](../img2/55.png)
+![IMG](../img2/56.png)
+![IMG](../img2/57.png)
+![IMG](../img2/58.png)
+![IMG](../img2/59.png)
+
+```SQL
+
+```
+
+**output**
+
+```SQL
+SELECT *
+FROM orders
+WHERE orderdate <= '2004-01-31'::date - INTERVAL '29 days'
+ORDER BY orderdate LIMIT 3;
+```
+
+**output**
+| orderid | orderdate | customerid | netamount | tax | totalamount |
+| :--- | :--- | :--- | :--- | :--- | :--- |
+| 2 | 2004-01-01 | 4858 | 54.90 | 4.53 | 59.43 |
+| 78 | 2004-01-01 | 19921 | 145.50 | 12.00 | 157.50 |
+| 131 | 2004-01-01 | 351 | 81.68 | 6.74 | 88.42 |
+
+```SQL
+SELECT EXTRACT(YEAR FROM INTERVAL '5 YEARS 20 MONTHS');
+```
+
+**output**
+
+| extract |
+| :--- |
+| 6 |
+
 ## 42. Exercise Date and Timestamp
+
+**Question**
+Get me all the employees above 60, use the appropriate date functions
+
+```SQL
+SELECT count(*)
+FROM employees
+WHERE age(birth_date::DATE) > INTERVAL '61 years';
+
+-- alternative
+SELECT count(birth_date) FROM employees
+WHERE birth_date < now() - interval '61 years'; -- 61 years before the current date
+
+SELECT count(*) FROM employees
+WHERE (
+   EXTRACT (YEAR FROM AGE(birth_date))
+) > 60;
+
+```
+
+**output**
+
+| count |
+| :--- |
+| 223206 |
+
+---
+
+**Question**
+How many employees where hired in February?
+
+```SQL
+SELECT count(*)
+FROM employees
+WHERE EXTRACT(MONTH FROM hire_date::date) = 2;
+
+SELECT count(emp_no) FROM employees
+where EXTRACT (MONTH FROM hire_date) = 2;
+```
+
+**output**
+
+| count |
+| :--- |
+| 24448 |
+
+---
+
+**Question**
+
+How many employees were born in november?
+
+```SQL
+SELECT count(*)
+FROM employees
+WHERE EXTRACT(MONTH FROM birth_date) = 11;
+
+SELECT COUNT(emp_no) FROM employees
+WHERE EXTRACT (MONTH FROM birth_date) = 11;
+```
+
+**output**
+
+| count |
+| :--- |
+| 24500 |
+
+---
+
+**Question**
+
+Who is the oldest employee? (Use the analytical function MAX)
+
+```SQL
+SELECT MAX(age(birth_date))
+FROM employees;
+```
+
+**output**
+
+| max |
+| :--- |
+| 70 years 7 mons 29 days 0 hours 0 mins 0.0 secs |
+
+---
+
+**Question**
+
+How many orders were made in January 2004?
+
+```SQL
+SELECT COUNT(orderid)
+FROM orders
+WHERE DATE_TRUNC('month', orderdate) = date '2004-01-01';
+
+SELECT count(*)
+FROM orders WHERE to_char(orderdate::date,'YYYY-MM') = '2004-01' ;
+```
+
+**output**
+
+| count |
+| :--- |
+| 1000 |
+
+---
 
 ## 43. DISTINCT
 
+![IMG](../img2/60.png)
+![IMG](../img2/61.png)
+![IMG](../img2/62.png)
+
+**Question**
+
+```SQL
+SELECT DISTINCT emp_no, from_date
+FROM salaries LIMIT 10;
+```
+
+**output**
+
+| emp\_no | from\_date |
+| :--- | :--- |
+| 10001 | 1986-06-26 |
+| 10001 | 1987-06-26 |
+| 10001 | 1988-06-25 |
+| 10001 | 1989-06-25 |
+| 10001 | 1990-06-25 |
+| 10001 | 1991-06-25 |
+| 10001 | 1992-06-24 |
+| 10001 | 1993-06-24 |
+| 10001 | 1994-06-24 |
+| 10001 | 1995-06-24 |
+
 ## 44. Exercise Distinct Keyword
+
+```SQL
+SELECT DISTINCT title
+FROM titles;
+
+```
+
+**output**
+| title |
+| :--- |
+| Engineer |
+| Senior Engineer |
+| Manager |
+| Assistant Engineer |
+| Staff |
+| Senior Staff |
+| Technique Leader |
+
+---
+
+```SQL
+SELECT count(DISTINCT birth_date)
+FROM employees;
+```
+
+**output**
+| count |
+| :--- |
+| 4750 |
+
+---
+
+```SQL
+SELECT count(DISTINCT lifeexpectancy)
+FROM country WHERE lifeexpectancy IS NOT NULL;
+```
+
+**output**
+| count |
+| :--- |
+| 160 |
 
 ## 45. Sorting Data
 

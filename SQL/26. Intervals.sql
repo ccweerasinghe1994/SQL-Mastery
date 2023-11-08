@@ -1,0 +1,10 @@
+SELECT *
+FROM orders
+WHERE orderdate <= '2004-01-31'::date - INTERVAL '29 days'
+ORDER BY orderdate LIMIT 3;
+
+
+SELECT EXTRACT(YEAR FROM INTERVAL '5 YEARS 20 MONTHS');
+
+
+
